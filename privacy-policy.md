@@ -1,8 +1,8 @@
 # Privacy Policy
 
 **Deka English**
-**Last updated:** March 21, 2026
-**Effective date:** March 21, 2026
+**Last updated:** April 5, 2026
+**Effective date:** April 5, 2026
 
 ---
 
@@ -48,7 +48,9 @@ You can configure the proxy server URL in the App's settings. If you do not use 
 - Personal identification information (name, email, phone number)
 - Account credentials (the App does not require an account)
 - Location data
-- Contacts, photos, or camera access (except images you explicitly select for text extraction)
+- Contacts
+- Continuous/background camera or microphone recording
+- Full photo library contents (except images you explicitly select for text extraction)
 - Device identifiers or advertising IDs
 - Analytics or telemetry data
 - Crash reports
@@ -165,15 +167,17 @@ If we make material changes to how we treat user data, we will update the App to
 
 ---
 
-## 10. Permissions
+## 10. Permissions and Access Requests
 
 The App requests the following device permissions:
 
 | Permission | Purpose |
 |------------|---------|
-| Internet (`android.permission.INTERNET`) | Required for AI-assisted card drafting and practice features. Not used if AI features are not activated. |
+| Internet (`android.permission.INTERNET`, Android) | Required for AI-assisted drafting, OCR extraction requests, and practice features. Not used if AI features are not activated. |
+| Camera access (iOS) | Requested only when you explicitly choose the Camera source for text extraction from images. |
+| Photo library access (iOS) | Requested only when you explicitly choose the Gallery/Photos source for text extraction from images. |
 
-The App does not request access to your contacts, camera, microphone, location, storage (beyond its own private directory), or any other sensitive permissions.
+The App does not request access to your contacts, location, advertising identifiers, or background media capture. Media access is user-initiated and limited to the image(s) you explicitly choose for OCR.
 
 ---
 
