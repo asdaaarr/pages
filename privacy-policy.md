@@ -1,8 +1,8 @@
 # Privacy Policy
 
 **Deka English**
-**Last updated:** April 5, 2026
-**Effective date:** April 5, 2026
+**Last updated:** April 7, 2026
+**Effective date:** April 7, 2026
 
 ---
 
@@ -51,11 +51,28 @@ You can configure the proxy server URL in the App's settings. If you do not use 
 - Contacts
 - Continuous/background camera or microphone recording
 - Full photo library contents (except images you explicitly select for text extraction)
-- Device identifiers or advertising IDs
-- Analytics or telemetry data
-- Crash reports
+- Advertising identifiers (IDFA / AAID)
 - Cookies or tracking pixels
 - Browsing history
+
+### 2.4 Aggregated Analytics and Crash Diagnostics
+
+To keep the App stable and understand feature usage at a high level, we use Firebase services:
+
+- **Firebase Analytics** (aggregated product usage events)
+- **Firebase Crashlytics** (crash and non-fatal diagnostics)
+
+What is sent:
+- Event names and coarse technical attributes (for example: feature used, source mode, count buckets)
+- Crash stack traces, app version, OS version, device model, and technical diagnostic metadata
+
+What is **not** sent:
+- Card text content (front/meaning/examples/collocations/nuances)
+- User account IDs (the App has no accounts)
+- Advertising identifiers
+- Tracking data across third-party apps/websites
+
+This telemetry is used only for App functionality and reliability, is transmitted over HTTPS, and is not used for advertising personalization.
 
 ---
 
@@ -67,6 +84,8 @@ You can configure the proxy server URL in the App's settings. If you do not use 
 | Study progress (SRS data) | Scheduling card reviews using spaced repetition | Device only |
 | App settings | Personalizing your experience | Device only |
 | Text sent via AI features | Generating card content, practice prompts, and answer feedback | Transmitted to proxy server; not stored by the App after the request completes |
+| Aggregated usage events | Product quality and feature usage insights | Firebase (Google) |
+| Crash diagnostics | Detecting, triaging, and fixing runtime failures | Firebase Crashlytics (Google) |
 
 We do not use your data for advertising, profiling, marketing, or any purpose other than providing the App's functionality.
 
@@ -80,11 +99,14 @@ When you use AI-assisted features, your request data is forwarded to OpenAI's AP
 
 We do not control how OpenAI processes data once it is received by their API.
 
-### 4.2 No Other Third-Party Sharing
+### 4.2 Firebase (Google)
 
-We do not share, sell, rent, or trade your data with any other third parties. The App contains no:
+The App uses Firebase Analytics and Firebase Crashlytics for aggregated analytics and technical diagnostics. These services process telemetry according to Google's Firebase privacy terms: [https://firebase.google.com/support/privacy](https://firebase.google.com/support/privacy).
+
+### 4.3 No Advertising or Data Brokerage
+
+We do not share, sell, rent, or trade your data with advertisers or data brokers. The App contains no:
 - Advertising SDKs
-- Analytics services
 - Social media integrations
 - Data brokers or aggregators
 
